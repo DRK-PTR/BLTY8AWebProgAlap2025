@@ -1,38 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hu">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Szövegformázás: bekezdés, igazítások</title>
 </head>
 
 <body>
-    <h1>Szövegformázás: bekezdés, igazítások</h1>
 
-    Ez egy sor, ami a bekezdés előtt van.
+    <div style="margin-bottom: 30px; font-size: 24px; font-weight: bold;">
+        Szövegformázás: bekezdés, igazítások
+    </div>
 
-    <div style="text-align: end;">
-        Ez egy szöveg, amit majd különféle módszerekkel fogunk elhelyezni és igazítani.
-        <br>
-        <span style="text-align: justify;">
-            Ezt a mondatot az előző után írom azzal a céllal, hogy ki tudjuk próbálni, hogy mi is az a "sorkizárt"
-            igazítás.
+    <div style="margin-bottom: 20px;">
+        Ez egy sor, ami a bekezdés előtt van.
+    </div>
+
+    <div style="text-align: end; margin-bottom: 20px;">
+        Ez egy szöveg, amit majd különféle módszerekkel fogunk elhelyezni és igazítani.<br>
+        <span style="text-align: center;">
+            Ezt a mondatot az előző után írom azzal a céllal,<br>
+            hogy ki tudjuk próbálni, hogy mi is az a 'sorkizárt' igazítás.
         </span>
     </div>
 
-    <div style="text-align: start; margin-top: 20px;">
+    <div style="margin-bottom: 20px;">
         Ez egy sor, ami a bekezdés után van.
     </div>
 
-    <div style="text-align: justify; margin-top: 20px; max-width: 500px;">
-        Ez egy szöveg, amit majd különféle módszerekkel fogunk elhelyezni és igazítani. Ezt a mondatot az előző után
-        írom azzal a céllal, hogy ki tudjuk próbálni, hogy mi is az a "sorkizárt" igazítás.
+    <div style="text-align: justify; width: 50%; margin-bottom: 20px;">
+        Ez egy szöveg, amit majd különféle módszerekkel fogunk elhelyezni és igazítani.
+        Ezt a mondatot az előző után írom azzal a céllal, hogy ki tudjuk próbálni,
+        hogy mi is az a 'sorkizárt' igazítás.
     </div>
 
-    <div style="text-align: start; margin-top: 20px;">
+    <div>
         Ez egy sor, ami a bekezdés után van.
     </div>
+
 </body>
 
 </html>
