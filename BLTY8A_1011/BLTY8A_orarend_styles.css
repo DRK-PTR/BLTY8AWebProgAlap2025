@@ -1,0 +1,41 @@
+h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+table {
+    width: 90%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+th, td {
+    border: 1px solid #ffffff;
+    padding: 10px;
+    background-color: #efefef;
+    text-align: center;
+    word-wrap: break-word;
+}
+
+th:first-child,
+td:first-child {
+    width: 80px;
+    background-color: #2b62e3;
+    color: whitesmoke;
+}
+
+th {
+    background-color: #2b62e3;
+    color: whitesmoke;
+}
+
+td:not(:first-child) {
+    height: 30px;
+}
+
+.highlight {
+    background-color: #cce5ff;
+    font-weight: bold;
+    color: #003366;
+}
