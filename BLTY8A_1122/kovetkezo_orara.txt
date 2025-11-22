@@ -1,0 +1,1 @@
+megcsinálni az órarendet json formátumba.

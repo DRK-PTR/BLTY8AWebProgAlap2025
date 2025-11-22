@@ -1,0 +1,28 @@
+{
+    "BLTY8A_orarend": {
+        "ora": [
+            {
+                "targy": "Webprogramozás alapjai",
+                "idopont": {
+                    "nap": "2025-09-01",
+                    "tol": 10,
+                    "ig": 12
+                },
+                "helyszin": "Inf. 124",
+                "oktato": "Dr. Bednarik László",
+                "szak": "Programtervező informatikus"
+            },
+            {
+                "targy": "Webprogramozás alapjai",
+                "idopont": {
+                    "nap": "2025-09-01",
+                    "tol": 13,
+                    "ig": 15
+                },
+                "helyszin": "Inf. 124",
+                "oktato": "Dr. Bednarik László",
+                "szak": "Programtervező informatikus"
+            }
+        ]
+    }
+}
