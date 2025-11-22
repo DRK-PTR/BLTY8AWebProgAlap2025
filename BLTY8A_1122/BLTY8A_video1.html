@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videó</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 2fr 2fr;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .footer {
+            border-top: 2px solid #000;
+            text-align: center;
+            padding-top: 20px;
+            margin-top: 40px;
+        }
+
+        .button_style {
+            background-color: darkgreen;
+            border: 1px solid black;
+            cursor: pointer;
+        }
+
+        .align {
+            height: 32px;
+            width: 32px;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Videó lejátszása BLTY8A</h2>
+
+    <video width="800" controls>
+        <source src="BLTY8A_video.mp4" type="video/mp4">
+    </video>
+
+    <div class="grid">
+        <div>
+            <button class="button_style" id="inditas">
+                <img class="align" src="kepek/play.png" alt="Lejátszás">
+            </button>
+            <button class="button_style" id="leallitas">
+                <img class="align" src="kepek/stop.png" alt="Leállítás">
+            </button>
+        </div>
+        <div>
+            <button class="button_style" id="inditas_leallitas">
+                <img class="align" src="kepek/play_pause.png" alt="Indítás / Leállítás">
+            </button>
+        </div>
+        <div>
+            <button class="button_style" id="nema">
+                <img class="align" src="kepek/no_sound.png" alt="Néma">
+            </button>
+            <button class="button_style" id="halk">
+                <img class="align" src="kepek/volume_mute.png" alt="Halk">
+            </button>
+            <button class="button_style" id="hangos">
+                <img class="align" src="kepek/volume_up.png" alt="Hangos">
+            </button>
+        </div>
+        <div>
+            <button class="button_style" id="nagyon_lassu">
+                <img class="align" src="kepek/slow_motion.png" alt="Nagyon lassú">
+            </button>
+            <button class="button_style" id="lassu">
+                <img class="align" src="kepek/double_left.png" alt="Lassú">
+            </button>
+            <button class="button_style" id="normal">
+                <img class="align" src="kepek/play.png" alt="Normál">
+            </button>
+            <button class="button_style" id="gyorsabb">
+                <img class="align" src="kepek/double_right.png" alt="Gyorsabb">
+            </button>
+            <button class="button_style" id="nagyon_gyors">
+                <img class="align" src="kepek/fast_forward.png" alt="Nagyon gyors">
+            </button>
+        </div>
+        <div>
+            <button class="button_style" id="kicsi">
+                <img class="align" src="kepek/photo_small.png" alt="Kicsi">
+            </button>
+            <button class="button_style" id="normal_meret">
+                <img class="align" src="kepek/photo_large.png" alt="Normál méret">
+            </button>
+            <button class="button_style" id="nagy">
+                <img class="align" src="kepek/photo.png" alt="Nagy">
+            </button>
+        </div>
+        <div>
+            <button class="button_style" id="befejezodott">
+                <img class="align" src="kepek/check.png" alt="Befejeződött-e?">
+            </button>
+            <button class="button_style" id="video_hossza">
+                <img class="align" src="kepek/timer.png" alt="Videó hossza (mp)">
+            </button>
+            <button class="button_style" id="jelenlegi_pozicio">
+                <img class="align" src="kepek/alarm.png" alt="Jelenlegi pozíció (mp)">
+            </button>
+        </div>
+    </div>
+
+    <footer class="footer">
+        Forrás: https://www.w3schools.com/html/html5_video.asp
+    </footer>
+
+</body>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+
+        const video = document.querySelector('video');
+
+        document.getElementById('inditas').onclick = () => video.play();
+        document.getElementById('leallitas').onclick = () => video.pause();
+
+        document.getElementById('inditas_leallitas').onclick = () => {
+            if (video.paused) video.play();
+            else video.pause();
+        };
+
+        document.getElementById('nema').onclick = () => video.muted = !video.muted;
+
+        document.getElementById('halk').onclick = () => {
+            video.volume = Math.max(0, video.volume - 0.1);
+        };
+
+        document.getElementById('hangos').onclick = () => {
+            video.volume = Math.min(1, video.volume + 0.1);
+        };
+
+        document.getElementById('nagyon_lassu').onclick = () => video.playbackRate = 0.25;
+        document.getElementById('lassu').onclick = () => video.playbackRate = 0.5;
+        document.getElementById('normal').onclick = () => video.playbackRate = 1;
+        document.getElementById('gyorsabb').onclick = () => video.playbackRate = 1.5;
+        document.getElementById('nagyon_gyors').onclick = () => video.playbackRate = 2;
+        document.getElementById('kicsi').onclick = () => video.width = 400;
+        document.getElementById('normal_meret').onclick = () => video.width = 800;
+        document.getElementById('nagy').onclick = () => video.width = 1200;
+
+        document.getElementById('befejezodott').onclick = () => {
+            alert(video.ended ? 'A videó befejeződött.' : 'A videó még nem ért véget.');
+        };
+
+        document.getElementById('video_hossza').onclick = () => {
+            alert('Videó hossza: ' + Math.round(video.duration) + ' mp');
+        };
+
+        document.getElementById('jelenlegi_pozicio').onclick = () => {
+            alert('Jelenlegi pozíció: ' + Math.round(video.currentTime) + ' mp');
+        };
+
+    });
+</script>
+
+</html>

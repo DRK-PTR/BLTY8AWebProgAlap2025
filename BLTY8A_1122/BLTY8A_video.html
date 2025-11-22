@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videó</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 2fr 2fr;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .footer {
+            border-top: 2px solid #000;
+            text-align: center;
+            padding-top: 20px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Videó lejátszása BLTY8A</h2>
+
+    <video width="800" controls>
+        <source src="BLTY8A_video.mp4" type="video/mp4">
+    </video>
+
+    <div class="grid">
+        <div>
+            <button id="inditas">Indítás</button>
+            <button id="leallitas">Leállítás</button>
+        </div>
+        <div>
+            <button id="inditas_leallitas">Indítás / Leállítás</button>
+        </div>
+        <div>
+            <button id="nema">Néma</button>
+            <button id="halk">Halk</button>
+            <button id="hangos">Hangos</button>
+        </div>
+        <div>
+            <button id="nagyon_lassu">Nagyon lassú</button>
+            <button id="lassu">Lassú</button>
+            <button id="normal">Normál</button>
+            <button id="gyorsabb">Gyorsabb</button>
+            <button id="nagyon_gyors">Nagyon gyors</button>
+        </div>
+        <div>
+            <button id="kicsi">Kicsi</button>
+            <button id="normal_meret">Normál</button>
+            <button id="nagy">Nagy</button>
+        </div>
+        <div>
+            <button id="befejezodott">Befejeződött-e?</button>
+            <button id="video_hossza">Videó hossza (mp)</button>
+            <button id="jelenlegi_pozicio">Jelenlegi pozíció (mp)</button>
+        </div>
+    </div>
+
+    <footer class="footer">
+        Forrás: https://www.w3schools.com/html/html5_video.asp
+    </footer>
+
+</body>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+
+        const video = document.querySelector('video');
+
+        document.getElementById('inditas').onclick = () => video.play();
+        document.getElementById('leallitas').onclick = () => video.pause();
+
+        document.getElementById('inditas_leallitas').onclick = () => {
+            if (video.paused) video.play();
+            else video.pause();
+        };
+
+        document.getElementById('nema').onclick = () => video.muted = !video.muted;
+
+        document.getElementById('halk').onclick = () => {
+            video.volume = Math.max(0, video.volume - 0.1);
+        };
+
+        document.getElementById('hangos').onclick = () => {
+            video.volume = Math.min(1, video.volume + 0.1);
+        };
+
+        document.getElementById('nagyon_lassu').onclick = () => video.playbackRate = 0.25;
+        document.getElementById('lassu').onclick = () => video.playbackRate = 0.5;
+        document.getElementById('normal').onclick = () => video.playbackRate = 1;
+        document.getElementById('gyorsabb').onclick = () => video.playbackRate = 1.5;
+        document.getElementById('nagyon_gyors').onclick = () => video.playbackRate = 2;
+        document.getElementById('kicsi').onclick = () => video.width = 400;
+        document.getElementById('normal_meret').onclick = () => video.width = 800;
+        document.getElementById('nagy').onclick = () => video.width = 1200;
+
+        document.getElementById('befejezodott').onclick = () => {
+            alert(video.ended ? 'A videó befejeződött.' : 'A videó még nem ért véget.');
+        };
+
+        document.getElementById('video_hossza').onclick = () => {
+            alert('Videó hossza: ' + Math.round(video.duration) + ' mp');
+        };
+
+        document.getElementById('jelenlegi_pozicio').onclick = () => {
+            alert('Jelenlegi pozíció: ' + Math.round(video.currentTime) + ' mp');
+        };
+
+    });
+</script>
+
+</html>
