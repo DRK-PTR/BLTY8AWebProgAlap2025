@@ -2,25 +2,300 @@
     "BLTY8A_orarend": {
         "ora": [
             {
+                "targy": "Programozás alapjai",
+                "idopont": {
+                    "nap": "2025-09-20",
+                    "tol": 9,
+                    "ig": 12.55
+                },
+                "helyszin": "online",
+                "oktato": "Gégény Dávid",
+                "szak": "Programtervező informatikus"
+            },
+            {
+                "targy": "Az informatika logikai alapjai",
+                "idopont": {
+                    "nap": "2025-09-20",
+                    "tol": 13.30,
+                    "ig": 17.30
+                },
+                "helyszin": "online",
+                "oktato": "Dr. Godó Zoltán Attila",
+                "szak": "Programtervező informatikus"
+            },
+            {
+                "targy": "Diszkrét matematika és lineáris algebra",
+                "idopont": {
+                    "nap": "2025-09-27",
+                    "tol": 9,
+                    "ig": 12.55
+                },
+                "helyszin": "117",
+                "oktato": "Dr. Földvári Attila József",
+                "szak": "Programtervező informatikus"
+            },
+            {
                 "targy": "Webprogramozás alapjai",
                 "idopont": {
-                    "nap": "2025-09-01",
-                    "tol": 10,
-                    "ig": 12
+                    "nap": "2025-09-27",
+                    "tol": 13.30,
+                    "ig": 17.30
                 },
-                "helyszin": "Inf. 124",
+                "helyszin": "124",
+                "oktato": "Dr. Bednarik László",
+                "szak": "Programtervező informatikus"
+            },
+            {
+                "targy": "Kommunikáció",
+                "idopont": {
+                    "nap": "2025-10-04",
+                    "tol": 13.30,
+                    "ig": 17.30
+                },
+                "helyszin": "16",
+                "oktato": "Dr. Nagy Bettina",
+                "szak": "Programtervező informatikus"
+            },
+            {
+                "targy": "Diszkrét matematika és lineáris algebra",
+                "idopont": {
+                    "nap": "2025-10-10",
+                    "tol": 13.30,
+                    "ig": 17.30
+                },
+                "helyszin": "117",
+                "oktato": "Dr. Földvári Attila József",
+                "szak": "Programtervező informatikus"
+            },
+            {
+                "targy": "Webprogramozás alapjai",
+                "idopont": {
+                    "nap": "2025-10-11",
+                    "tol": 9,
+                    "ig": 12.55
+                },
+                "helyszin": "online",
+                "oktato": "Dr. Bednarik László",
+                "szak": "Programtervező informatikus"
+            },
+            {
+                "targy": "Bevezetés az informatikába",
+                "idopont": {
+                    "nap": "2025-10-11",
+                    "tol": 13.30,
+                    "ig": 17.30
+                },
+                "helyszin": "online",
+                "oktato": "Janics Tamás",
+                "szak": "Programtervező informatikus"
+            },
+            {
+                "targy": "Az informatika logikai alapjai",
+                "idopont": {
+                    "nap": "2025-10-18",
+                    "tol": 9,
+                    "ig": 17.30
+                },
+                "helyszin": "online",
+                "oktato": "Dr. Godó Zoltán Attila",
+                "szak": "Programtervező informatikus"
+            },
+            {
+                "targy": "Bevezetés az informatikába",
+                "idopont": {
+                    "nap": "2025-10-25",
+                    "tol": 9,
+                    "ig": 12.55
+                },
+                "helyszin": "online",
+                "oktato": "Janics Tamás",
+                "szak": "Programtervező informatikus"
+            },
+            {
+                "targy": "Programozás alapjai",
+                "idopont": {
+                    "nap": "2025-10-25",
+                    "tol": 13.30,
+                    "ig": 17.30
+                },
+                "helyszin": "online",
+                "oktato": "Gégény Dávid",
+                "szak": "Programtervező informatikus"
+            },
+            {
+                "targy": "Számítógép architektúrák",
+                "idopont": {
+                    "nap": "2025-11-07",
+                    "tol": 13.30,
+                    "ig": 17.30
+                },
+                "helyszin": "124",
+                "oktato": "Dr. Bednarik László",
+                "szak": "Programtervező informatikus"
+            },
+            {
+                "targy": "Programozás alapjai",
+                "idopont": {
+                    "nap": "2025-11-08",
+                    "tol": 9,
+                    "ig": 12.55
+                },
+                "helyszin": "online",
+                "oktato": "Gégény Dávid",
+                "szak": "Programtervező informatikus"
+            },
+            {
+                "targy": "Kutatás- és tanulásmódszertan",
+                "idopont": {
+                    "nap": "2025-11-08",
+                    "tol": 13.30,
+                    "ig": 17.30
+                },
+                "helyszin": "online",
+                "oktato": "Dr. Kökényesi Nikoletta Judit",
+                "szak": "Programtervező informatikus"
+            },
+            {
+                "targy": "Diszkrét matematika és lineáris algebra",
+                "idopont": {
+                    "nap": "2025-11-14",
+                    "tol": 13.30,
+                    "ig": 17.30
+                },
+                "helyszin": "130",
+                "oktato": "Dr. Földvári Attila József",
+                "szak": "Programtervező informatikus"
+            },
+            {
+                "targy": "Az informatika logikai alapjai",
+                "idopont": {
+                    "nap": "2025-11-15",
+                    "tol": 9,
+                    "ig": 12.55
+                },
+                "helyszin": "online",
+                "oktato": "Dr. Godó Zoltán Attila",
+                "szak": "Programtervező informatikus"
+            },
+            {
+                "targy": "Programozás alapjai",
+                "idopont": {
+                    "nap": "2025-11-15",
+                    "tol": 13.30,
+                    "ig": 17.30
+                },
+                "helyszin": "online",
+                "oktato": "Gégény Dávid",
+                "szak": "Programtervező informatikus"
+            },
+            {
+                "targy": "Számítógép architektúrák",
+                "idopont": {
+                    "nap": "2025-11-21",
+                    "tol": 13.30,
+                    "ig": 17.30
+                },
+                "helyszin": "124",
                 "oktato": "Dr. Bednarik László",
                 "szak": "Programtervező informatikus"
             },
             {
                 "targy": "Webprogramozás alapjai",
                 "idopont": {
-                    "nap": "2025-09-01",
-                    "tol": 13,
-                    "ig": 15
+                    "nap": "2025-11-22",
+                    "tol": 9,
+                    "ig": 12.55
                 },
-                "helyszin": "Inf. 124",
+                "helyszin": "124",
                 "oktato": "Dr. Bednarik László",
+                "szak": "Programtervező informatikus"
+            },
+            {
+                "targy": "Bevezetés az informatikába",
+                "idopont": {
+                    "nap": "2025-11-22",
+                    "tol": 13.30,
+                    "ig": 17.30
+                },
+                "helyszin": "124",
+                "oktato": "Janics Tamás",
+                "szak": "Programtervező informatikus"
+            },
+            {
+                "targy": "Bevezetés TEX-be",
+                "idopont": {
+                    "nap": "2025-11-28",
+                    "tol": 9,
+                    "ig": 15.25
+                },
+                "helyszin": "online",
+                "oktato": "Dr. Veres Laura",
+                "szak": "Programtervező informatikus"
+            },
+            {
+                "targy": "Kommunikáció",
+                "idopont": {
+                    "nap": "2025-12-05",
+                    "tol": 13.25,
+                    "ig": 17.30
+                },
+                "helyszin": "online",
+                "oktato": "Dr. Nagy Bettina",
+                "szak": "Programtervező informatikus"
+            },
+            {
+                "targy": "Diszkrét matematika és lineáris algebra",
+                "idopont": {
+                    "nap": "2025-12-05",
+                    "tol": 13.30,
+                    "ig": 17.30
+                },
+                "helyszin": "online",
+                "oktato": "Dr. Földvári Attila József",
+                "szak": "Programtervező informatikus"
+            },
+            {
+                "targy": "Kutatás- és tanulásmódszertan",
+                "idopont": {
+                    "nap": "2025-12-12",
+                    "tol": 9,
+                    "ig": 12.55
+                },
+                "helyszin": "online",
+                "oktato": "Dr. Kökényesi Nikoletta Judit",
+                "szak": "Programtervező informatikus"
+            },
+            {
+                "targy": "Webprogramozás alapjai",
+                "idopont": {
+                    "nap": "2025-12-12",
+                    "tol": 13.30,
+                    "ig": 17.30
+                },
+                "helyszin": "online",
+                "oktato": "Dr. Bednarik László",
+                "szak": "Programtervező informatikus"
+            },
+            {
+                "targy": "Bevezetés TEX-be",
+                "idopont": {
+                    "nap": "2025-12-13",
+                    "tol": 10,
+                    "ig": 11.15
+                },
+                "helyszin": "online",
+                "oktato": "Dr. Veres Laura",
+                "szak": "Programtervező informatikus"
+            },
+            {
+                "targy": "Bevezetés az informatikába",
+                "idopont": {
+                    "nap": "2025-12-13",
+                    "tol": 13.30,
+                    "ig": 17.30
+                },
+                "helyszin": "online",
+                "oktato": "Janics Tamás",
                 "szak": "Programtervező informatikus"
             }
         ]
